@@ -1,4 +1,4 @@
-FROM openjdk:8
+FROM openjdk:19
 
 RUN apt-get update; apt-get -y install wget rsync && \
     TMPDIR=$(mktemp -d) && cd $TMPDIR && \
